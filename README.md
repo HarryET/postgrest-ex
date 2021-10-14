@@ -19,8 +19,8 @@ end
 Configuration
 ```exs
 config :postgrest_ex, MyApp,
-  postgrest_url: "", // URL for the PostgREST server
-  postgrest_key: ""  // Authorization token for PostgREST server
+  postgrest_url: "", # URL for the PostgREST server
+  postgrest_key: ""  # Authorization token for PostgREST server
 ```
 
 Usage
