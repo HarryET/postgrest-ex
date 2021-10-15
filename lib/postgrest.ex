@@ -1,8 +1,11 @@
-defmodule Postgrest.Client do
-  @postgrest_url Application.fetch_env!(:postgrest_ex, :postgrest_url)
-  @postgrest_key Application.fetch_env!(:postgrest_ex, :postgrest_key)
+defmodule Postgrest do
+  @type configuration :: %{
+    url: String.t,
+    key: String.t
+  }
 
-  def hello do
-    :world
+  @spec from(String.t, configuration) :: String.t
+  def from(table_name, config) do
+    table_name
   end
 end

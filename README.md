@@ -17,10 +17,11 @@ end
 ```
 
 Configuration
-```exs
-config :postgrest_ex, MyApp,
-  postgrest_url: "", # URL for the PostgREST server
-  postgrest_key: ""  # Authorization token for PostgREST server
+```ex
+@type configuration :: %{
+  url: String.t,
+  key: String.t
+}
 ```
 
 Usage
@@ -28,6 +29,7 @@ Usage
 > Not finalized. More documentation soon.
 
 ```ex
+Postgrest.from("messages", %{url: "https://abc.com/v1", key: "aaa.bbb.ccc"})
 ```
 
 ## License

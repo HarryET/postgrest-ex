@@ -19,6 +19,7 @@ defmodule Postgrest.MixProject do
 
   defp deps do
     [
+      {:httpoison, "~> 1.8"}
     ]
   end
 end
